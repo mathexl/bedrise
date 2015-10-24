@@ -1,0 +1,177 @@
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js" type="text/javascript"></script>
+<script>
+
+
+$(document).keydown(function(e) {
+
+    switch (e.which) {
+    case 37:
+        $('.main').stop().animate({
+            left: '-=50'
+        }); //left arrow key
+        break;
+    case 39:
+        $('.main').stop().animate({
+            left: '+=50'
+        }); //right arrow key
+        break;
+
+    }
+
+
+})
+
+
+$(document).on('mousemove', function(e){
+    $('.main').stop().animate({
+       left:  e.pageX - 150
+    },1000);
+
+   //onsole.log($('.main').position().left);
+
+    if($('.main').position().left < 0){
+        $('.main').stop().animate({
+            left: '0'
+        },600);
+
+    }
+
+});
+
+$( window ).resize(function() {
+  if($( window ).width() < 403){
+    $('.direction1').fadeOut();
+    $('.direction2').fadeIn();
+
+    console.log("HERE!");
+    $('.transistor_alpha_mark').animate({
+            backgroundColor: "#EB9999"
+    },1000);
+    $('.transistor_alpha_sides').css("border-bottom-color", "#EB9999");
+    $('.transistor_alpha_sides').animate({
+            bottom:0
+    },1000);
+    $('.transistor_alpha_giga_ring_2').animate({
+            borderWidth:20
+    },1000);
+
+    $('.wire').animate({
+            borderWidth:20
+    },1000);
+
+    $('.wire').css("left","50%");
+    $('.transistor_alpha_diode').css("border","2px #6BBDFC solid");
+    $('.transistor_alpha_diode').css("-webkit-animation","none");
+    step1 = true
+  }
+
+  if($( window ).width() > 1200 && step1){
+    $('.transistor_alpha_ring_2').animate({
+            borderWidth:10
+    },1000);
+
+    $('.transistor_alpha_giga_ring_3').animate({
+            borderWidth:20
+    },1000);
+
+    $('.transistor_alpha_mark').animate({
+            backgroundColor: "#6BBDFC"
+    },1000);
+
+    $('.transistor_alpha_sides').animate({
+            bottom:-20
+    },1000);
+
+    $('.bob_2').fadeIn();
+    $('.direction2').fadeOut();
+
+
+
+  }
+
+
+  if($('.main').position().left > $( window ).width()){
+        $('.main').stop().animate({
+            left: $( window ).width() - 100
+        },600);
+
+  }
+
+});
+
+
+</script>
+<body>
+    <h1>CSS & JS</h1>
+    <h2>RESOLUTIONAL PUZZLES</h2>
+    <h3 class="direction1">CONNECT THE PENDULUM AND THE MANTLE</h3>
+    <h3 class="direction2">WIDEN THE HORIZAN ONCE MORE</h3>
+
+                   <!----------------------
+                   KING CHARACTER CODE
+                   ------------------------>
+                    <div class="king main">
+                            <div class="body"></div>
+                            <div class="hat"></div>
+                            <div class="crown_base"></div>
+                            <div class="crown_accent"></div>
+                            <div class="crown_accent_accent"></div>
+                            <div class="toga"></div>
+                            <div class="toga_body"></div>
+
+                            <div class="eye">
+                                <div class="eyelid"></div>
+
+                            </div>
+                            <div class="eye2">
+                                <div class="eyelid"></div>
+
+                            </div>
+                            <div class="arm"></div>
+                            <div class="leg1"></div>
+                            <div class="leg2"></div>
+                    </div>
+
+
+                   <!----------------------
+                   TRANSISTOR CODE
+                   ------------------------>
+                    <div class="transistor_alpha_main">
+                        <div class="transistor_alpha_sides"></div>
+                        <div class="transistor_alpha_scaffold"></div>
+                        <div class="transistor_alpha_scaffold_2"></div>
+                        <div class="transistor_alpha_scaffold_3"></div>
+                        <div class="transistor_alpha_mark"></div>
+                        <div class="transistor_alpha_mark transistor_alpha_mark_2"></div>
+                        <div class="transistor_alpha_mark transistor_alpha_mark_3"></div>
+
+                        <div class="transistor_alpha_diode"></div>
+                        <div class="transistor_alpha_ring"></div>
+                        <div class="transistor_alpha_ring_2"></div>
+
+                        <div class="transistor_alpha_mega_ring"></div>
+                        <div class="transistor_alpha_giga_ring"></div>
+                        <div class="transistor_alpha_giga_ring_2"></div>
+                        <div class="transistor_alpha_giga_ring_3"></div>
+
+                    </div>
+
+                   <!--------------id="transistor_alpha_mark
+                   WIRE CODE
+                   ------------------------>
+                    <div class="wire">
+                        <div class="bob"></div>
+                        <div class="bob_2"></div>
+
+                    </div>
+
+
+
+
+</body>

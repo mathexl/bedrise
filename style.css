@@ -1,0 +1,625 @@
+body{
+max-height: 100vh;
+max-width: 100vw;
+    position:relative;
+background: linear-gradient(310deg, #d5ffc3, #bdd8fc);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 9s ease infinite;
+-moz-animation: AnimationName 9s ease infinite;
+animation: AnimationName 9s ease infinite;
+font-family:Oswald, sans-serif;
+    cursor: crosshair;
+padding:0px;
+margin:0px;
+overflow-y: hidden;
+
+}
+body h1{
+position:absolute;
+width:100%;
+top:20vh;
+font-size:5em;
+text-align:center;
+color:white;
+opacity:.5;
+
+
+}
+
+body h2{
+position:absolute;
+width:100%;
+top:42vh;
+top: calc(20vh + 140px);
+
+font-size:1em;
+text-align:center;
+color:white;
+opacity:.5;
+
+}
+
+body h3{
+position:absolute;
+width:100%;
+top:43vh;
+top: calc(30vh + 140px);
+
+font-size:1.2em;
+text-align:center;
+color:white;
+opacity:1;
+
+
+}
+.body
+{
+  background : #404041;
+  background : rgba(64, 64, 65, 1);
+  position : absolute ;
+  left : 023px;
+  top : 41px;
+  width : 114px;
+  height : 114px;
+  border-radius : 14px;
+  -moz-border-radius : 14px;
+  -webkit-border-radius : 14px;
+}
+
+
+
+/* KING SPECIFIC STYLES
+***********************
+***********************
+***********************
+***********************
+*/
+
+.king{
+    position:absolute;
+    bottom:165px;
+    left:0px;
+    z-index:100;
+}
+.hat
+{
+  background : transparent;
+  position : absolute ;
+  left : 21px;
+  top :40px;
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 40px 0 0;
+border-color: #58595B transparent transparent transparent;
+line-height: 0px;
+_border-color: #007bff #000000 #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+.crown_base
+{
+  background : #D6DE23;
+  background : rgba(214, 222, 35, 1);
+  position : absolute ;
+  left : 23px;
+  top : 25px;
+  width : 114px;
+  height : 10px;
+  -webkit-animation: float 1s infinite; /* Safari 4+ */
+  -moz-animation:    float 1s infinite; /* Fx 5+ */
+  -o-animation:      float 1s infinite; /* Opera 12+ */
+  animation:         float 1s infinite;
+}
+.crown_accent
+{
+  opacity : 1;
+  position : absolute ;
+  left : 97px;
+  top : -5px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 40px 40px;
+border-color: transparent transparent #D6DE23 transparent;
+line-height: 0px;
+_border-color: #000000 #000000 #D6DE23 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+  filter: alpha(opacity=30) progid:DXImageTransform.Microsoft.Alpha(opacity=30) ;
+      -webkit-animation: float 1s infinite; /* Safari 4+ */
+  -moz-animation:    float 1s infinite; /* Fx 5+ */
+  -o-animation:      float 1s infinite; /* Opera 12+ */
+  animation:         float 1s infinite;
+}
+
+.crown_accent_accent
+{
+  opacity : .6;
+  position : absolute ;
+  left : 117px;
+  top : -5px;
+width: 0;
+
+height: 0;
+border-style: solid;
+border-width: 20px 20px 20px 0;
+border-color: transparent #FFFFFF transparent transparent;
+line-height: 0px;
+_border-color: #000000 #FFFFFF #000000 #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+      -webkit-animation: float 1s infinite; /* Safari 4+ */
+  -moz-animation:    float 1s infinite; /* Fx 5+ */
+  -o-animation:      float 1s infinite; /* Opera 12+ */
+  animation:         float 1s infinite;
+}
+.toga
+{
+  border-style : Solid;
+  border-color : #58595B;
+  border-color : rgba(88, 89, 91, 1);
+  border-width : 1px;
+  position : absolute ;
+  left : 017px;
+  top : 68px;
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 50px 125px;
+border-color: transparent transparent #58595B transparent;
+line-height: 0px;
+_border-color: #000000 #000000 #58595B #000000;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+
+.toga_body
+{
+    background-color:#58595B;
+
+  position : absolute ;
+  left : 17px;
+  top : 118px;
+  width: 125px;
+height: 43px;
+z-index:2;
+_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+
+.eye
+{
+  background : -moz-linear-gradient(9488.44% 13807.22% 0deg,rgba(230, 231, 232, 1) 0%,rgba(208, 210, 211, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(230, 231, 232, 1) 0%, rgba(208, 210, 211, 1) 100%);
+  background : -webkit-gradient(linear,9488.44% 13807.22% ,9559.15% 13807.22% ,color-stop(0,rgba(230, 231, 232, 1) ),color-stop(1,rgba(208, 210, 211, 1) ));
+  background : -o-linear-gradient(0deg, rgba(230, 231, 232, 1) 0%, rgba(208, 210, 211, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(230, 231, 232, 1) 0%, rgba(208, 210, 211, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E7E8', endColorstr='#D0D2D3' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(230, 231, 232, 1) 0%, rgba(208, 210, 211, 1) 100%);
+  position : absolute ;
+  left : 105px;
+  top : 53px;
+  width : 10px;
+      -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height : 10px;
+  overflow:hidden;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E7E8',endColorstr='#D0D2D3' , GradientType=1);
+}
+.eye2
+{
+  background : -moz-linear-gradient(9536.83% 13690.38% 0deg,rgba(230, 231, 232, 1) 0%,rgba(208, 210, 211, 1) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(230, 231, 232, 1) 0%, rgba(208, 210, 211, 1) 100%);
+  background : -webkit-gradient(linear,9536.83% 13690.38% ,9607.54% 13690.38% ,color-stop(0,rgba(230, 231, 232, 1) ),color-stop(1,rgba(208, 210, 211, 1) ));
+  background : -o-linear-gradient(0deg, rgba(230, 231, 232, 1) 0%, rgba(208, 210, 211, 1) 100%);
+  background : -ms-linear-gradient(0deg, rgba(230, 231, 232, 1) 0%, rgba(208, 210, 211, 1) 100%);
+      overflow:hidden;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E7E8', endColorstr='#D0D2D3' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(230, 231, 232, 1) 0%, rgba(208, 210, 211, 1) 100%);
+  position : absolute ;
+  left : 80px;
+  top : 53px;
+  width : 10px;
+      -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height : 10px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6E7E8',endColorstr='#D0D2D3' , GradientType=1);
+}
+
+.arm
+{
+  background : #404041;
+  background : rgba(64, 64, 65, 1);
+  position : absolute ;
+  left : 19px;
+  top : 86px;
+  width : 10px;
+  height : 10px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.st9
+{
+  background : #929497;
+  background : rgba(146, 148, 151, 1);
+  position : absolute ;
+  left : -8px;
+  top : 0px;
+  width : 18px;
+  height : 5px;
+      -webkit-transform: rotate(110deg);
+  transform: rotate(110deg);
+}
+.leg1
+{
+  background : #404041;
+  background : rgba(64, 64, 65, 1);
+  position : absolute ;
+  left : 99px;
+  top : 150px;
+  width : 15px;
+  height : 15px;
+      -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+.leg2
+{
+
+  background : #404041;
+  background : rgba(64, 64, 65, 1);
+  position : absolute ;
+  left : 51px;
+  top : 150px;
+  width : 15px;
+  height : 15px;
+      -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.eyelid
+{
+  background : #929497;
+  background : rgba(146, 148, 151, 1);
+  position : absolute ;
+  left : -8px;
+  top : 0px;
+  width : 18px;
+  height : 5px;
+      -webkit-transform: rotate(110deg);
+  transform: rotate(110deg);
+  -webkit-animation: blink 5s infinite; /* Safari 4+ */
+  -moz-animation:    blink 5s infinite; /* Fx 5+ */
+  -o-animation:      blink 5s infinite; /* Opera 12+ */
+  animation:         blink 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+
+/* END OF KING STYES */
+
+/* TRANSISTOR STYLES
+***********************
+***********************
+***********************
+***********************
+*/
+
+.transistor_alpha_main{
+    width: 80px;
+    height:30%;
+    bottom:0px;
+    left:calc(50% - 40px);
+    position: absolute;
+    background-color: #F07059; /*reddish*/
+    z-index:5;
+}
+
+.transistor_alpha_sides{
+	width: 0;
+	height: 0;
+	border-left: 85px solid transparent;
+	border-right: 85px solid transparent;
+	border-bottom: 100px solid #C25A48; /* darker reddish */
+    bottom:-20px;
+    position:absolute;
+    left:-45px;
+    z-index:6;
+}
+
+.transistor_alpha_scaffold{
+	width: 0;
+	height: 0;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-bottom: 80px solid #E86C56; /* darker reddish */
+    bottom:0px;
+    position:absolute;
+    left:-40px;
+    z-index:9;
+}
+
+.transistor_alpha_scaffold_2{
+	width: 0;
+	height: 0;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-bottom: 60px solid #E86C56; /* darker reddish */
+    bottom:0px;
+    position:absolute;
+    left:-40px;
+    z-index:9;
+}
+
+.transistor_alpha_scaffold_3{
+	width: 0;
+	height: 0;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-bottom: 40px solid #E86C56; /* darker reddish */
+    bottom:0px;
+    position:absolute;
+    left:-40px;
+    z-index:9;
+}
+
+
+
+.transistor_alpha_mark {
+	width: 20px;
+	height: 20px;
+    border-radius:100%;
+    border: 2px #E86C56 solid;
+    box-sizing: border-box;
+
+    bottom:120px;
+    position:absolute;
+    left:30px;
+    z-index:9;
+}
+
+
+.transistor_alpha_mark_2 {
+	width: 20px;
+	height: 20px;
+    border-radius:100%;
+    border: 2px #E86C56 solid;
+    box-sizing: border-box;
+
+    bottom:180px;
+    position:absolute;
+    left:30px;
+    z-index:9;
+
+}
+
+
+.transistor_alpha_mark_3 {
+	width: 20px;
+	height: 20px;
+    border-radius:100%;
+    border: 2px #E86C56 solid;
+    box-sizing: border-box;
+    bottom:150px;
+    position:absolute;
+    left:30px;
+    z-index:9;
+
+}
+
+.transistor_alpha_diode {
+	width: 40px;
+	height: 40px;
+    border-radius:100%;
+    border: 2px #E86C56 solid;
+    top:-48px;
+    position:absolute;
+    left:20px;
+    z-index:9;
+  -webkit-animation: float .5s infinite; /* Safari 4+ */
+  -moz-animation:    float .5s infinite; /* Fx 5+ */
+  -o-animation:      float .5s infinite; /* Opera 12+ */
+  animation:         float .5s infinite;
+        box-sizing: border-box;
+
+}
+
+.transistor_alpha_ring {
+	width: 80px;
+	height: 80px;
+    border-radius:100%;
+    border: 10px #F07059 solid;
+    top:-70px;
+    position:absolute;
+    left:0px;
+    box-sizing: border-box;
+    z-index:9;
+}
+
+.transistor_alpha_ring_2 {
+	width: 80px;
+	height: 80px;
+    border-radius:100%;
+    border: 0px #6BBDFC solid; /* blueish */
+    top:-70px;
+    position:absolute;
+    left:0px;
+    box-sizing: border-box;
+    z-index:9;
+}
+
+.transistor_alpha_mega_ring {
+	width: 120px;
+	height: 120px;
+    border-radius:100%;
+    border: 20px #E86C56 solid;
+    bottom:0px;
+    position:absolute;
+    left:-20px;
+    box-sizing: border-box;
+    z-index:9;
+}
+
+.transistor_alpha_giga_ring {
+	width: 240px;
+	height: 240px;
+    border-radius:100%;
+    border: 20px #E86C56 solid;
+    bottom:-120px;
+    position:absolute;
+    left:-80px;
+    box-sizing: border-box;
+    z-index:9;
+}
+
+.transistor_alpha_giga_ring_2{
+	width: 240px;
+	height: 240px;
+    border-radius:100%;
+    border: 0px #EB9999 solid;
+    bottom:-120px;
+    position:absolute;
+    left:-80px;
+    box-sizing: border-box;
+    z-index:9;
+}
+
+.transistor_alpha_giga_ring_3{
+	width: 240px;
+	height: 240px;
+    border-radius:100%;
+    border: 0px #6BBDFC solid;
+    bottom:-120px;
+    position:absolute;
+    left:-80px;
+    box-sizing: border-box;
+    z-index:9;
+}
+/* END OF TRANSISTOR STYES */
+
+
+/* PENDULUM STYLES
+***********************
+***********************
+***********************
+***********************
+*/
+
+.wire{
+    width:2px;
+    height: 134%;
+    top:-67%;
+    left:200px;
+    background-color: #FCD46A;
+    position:absolute;
+    overflow:visible;
+-webkit-animation: swing 4s infinite; /* Safari 4+ */
+  -moz-animation:    swing 4s infinite; /* Fx 5+ */
+  -o-animation:      swing 4s infinite; /* Opera 12+ */
+  animation:         swing 4s infinite;
+}
+
+.bob{
+    position:absolute;
+    bottom:0px;
+    height:20px;
+    width:20px;
+    left:-10px;
+    background-color: #FCD46A;
+    border-radius:100%;
+
+
+}
+
+.bob_2{
+    position:absolute;
+    bottom:0px;
+    height:20px;
+    width:20px;
+    left:-10px;
+    background-color: #6BBDFC;
+    border-radius:100%;
+    display:none;
+}
+
+/* END OF PENDULUM STYLES*/
+
+/* ANIMATIONS */
+
+@-webkit-keyframes blink {
+  0%   { width : 18px;height : 5px; }
+  48%   { width : 18px;height : 5px; }
+
+  50% { width : 28px;height : 25px; }
+  52%  { width : 18px;height : 5px; }
+
+}
+@-moz-keyframes blink {
+  0%   { width : 18px;height : 5px; }
+  48%   { width : 18px;height : 5px; }
+
+  50% { width : 28px;height : 25px; }
+  52%  { width : 18px;height : 5px; }
+}
+@-o-keyframes blink {
+  0%   { width : 18px;height : 5px; }
+  48%   { width : 18px;height : 5px; }
+
+  50% { width : 28px;height : 25px; }
+  52%  { width : 18px;height : 5px; }
+
+}
+@keyframes blink {
+  0%   { width : 18px;height : 5px; }
+  48%   { width : 18px;height : 5px; }
+
+  50% { width : 28px;height : 25px; }
+  52%  { width : 18px;height : 5px; }
+
+}
+
+/* FLOAT EFFECT */
+@keyframes float {
+  0%   { margin-top:0px; }
+
+  50% { margin-top:-3px; }
+  100%  { margin-top:0px; }
+
+}
+
+/*SWING EFFECT */
+
+@-moz-keyframes swing{
+    0%{-moz-transform:rotate(-2deg)}
+    50%{-moz-transform:rotate(2deg)}
+    100%{-moz-transform:rotate(-2deg)}
+}
+@-webkit-keyframes swing{
+    0%{-webkit-transform:rotate(-2deg)}
+    50%{-webkit-transform:rotate(2deg)}
+    100%{-webkit-transform:rotate(-2deg)}
+}
+
+
+/*background*/
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:45% 0%}
+    50%{background-position:56% 100%}
+    100%{background-position:45% 0%}
+}
+
+/* DEFAULT HIDDEN CODES */
+
+.direction2{
+  display:none;
+}
